@@ -15,7 +15,7 @@ Nuxt, Tailwind & Storybook monorepo template
 - [⚡️ Vite](https://vitejs.dev/) - Instant HMR
 - [🦾 TypeScript](https://www.typescriptlang.org/) - JavaScript, but strongly typed and better
 
-<br/><br/>
+<br/>
 
 ## Clone to local
 
@@ -26,10 +26,13 @@ npx degit Develing1991/monorepo-nuxi [project name]
 cd [project name]
 ```
 
-<br/><br/>
+<br/>
 
 ## Commands
 ```
+# required pnpm@8.2.0
+- npm i -g pnpm@8.2.0
+
 # install all dependencies of the monorepo
 - pnpm install
 
