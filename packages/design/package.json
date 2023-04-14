@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "start": "storybook dev -p 6006",
+    "start": "storybook dev -p 4000",
     "build-storybook": "storybook build"
   },
   "dependencies": {

@@ -2,6 +2,7 @@
   "name": "@develing1991/starter",
   "version": "1.0.0",
   "description": "",
+  "packageManager": "pnpm@8.2",
   "main": "index.js",
   "scripts": {
     "clean": "find ./ -name node_modules -type d -exec rm -rf {} +",
