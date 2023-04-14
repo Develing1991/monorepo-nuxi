@@ -1,0 +1,20 @@
+{
+  "name": "@develing1991/webapp",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build && nuxt start",
+    "start": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@develing1991/design": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.14",
+    "nuxt": "3.3.1",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.3.1"
+  }
+}
