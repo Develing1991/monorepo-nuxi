@@ -5,7 +5,7 @@ Nuxt, Tailwind & Storybook monorepo template
 </pre>
 <hr />
 
-> inspired by [lautr](https://github.com/lautr/initium-nuxt)
+> inspired by [lautr](https://github.com/lautr)
 
 ## Features
 - [🚝 Monorepo](https://pnpm.io/workspaces) - workspace setup using [pnpm](https://pnpm.io/)
