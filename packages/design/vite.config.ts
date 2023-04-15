@@ -18,14 +18,7 @@ export default defineConfig({
     Components({
       dirs: ['./components'],
       dts: true, // enabled by default if `typescript` is installed
-      directoryAsNamespace: false, // true: components/ui/test.vue -> UiTest.vue
-      // nuxt.config.ts에도 디렉토리 네임스페이스 설정 false
-      // components: [
-      //   {
-      //     path: '~/components',
-      //     pathPrefix: false,
-      //   },
-      // ],
+      directoryAsNamespace: true, // true: components/ui/test.vue -> UiTest.vue
     }),
   ],
   resolve: {

@@ -8,10 +8,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "@develing1991/design": "latest"
-  },
+  
   "devDependencies": {
+    "@develing1991/design": "latest",
     "autoprefixer": "10.4.14",
     "nuxt": "3.3.1",
     "postcss": "8.4.21",
