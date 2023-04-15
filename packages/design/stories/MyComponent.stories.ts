@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
-import MyComponent from '@/components/MyComponent.vue'
+import MyComponent from '@/components/ui/MyComponent.vue'
 // import Button from "./Button.vue";
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
