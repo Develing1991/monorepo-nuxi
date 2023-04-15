@@ -8,12 +8,12 @@ Nuxt, Tailwind & Storybook monorepo template
 > inspired by [lautr](https://github.com/lautr)
 
 ## Features
-- [🚝 Monorepo](https://pnpm.io/workspaces) - workspace setup using [pnpm](https://pnpm.io/)
-- [💚 Nuxt 3](https://v3.nuxtjs.org) - File-based routing, components auto importing, modules, etc.
-- [🌬️ Tailwind 3](https://tailwindcss.com/) - the utility-first CSS framework
-- [🖌️ Storybook](https://storybook.js.org/) - build UI components and pages in isolation
-- [⚡️ Vite](https://vitejs.dev/) - Instant HMR
-- [🦾 TypeScript](https://www.typescriptlang.org/) - JavaScript, but strongly typed and better
+- [Monorepo](https://pnpm.io/workspaces) - workspace setup using [pnpm](https://pnpm.io/)
+- [Nuxt 3](https://v3.nuxtjs.org) - File-based routing, components auto importing, modules, etc.
+- [Tailwind 3](https://tailwindcss.com/) - the utility-first CSS framework
+- [Storybook](https://storybook.js.org/) - build UI components and pages in isolation
+- [Vite](https://vitejs.dev/) - Instant HMR
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript, but strongly typed and better
 
 <br/>
 
