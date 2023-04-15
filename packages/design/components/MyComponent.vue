@@ -1,3 +1,5 @@
 <template>
-  <div class="text-red-500">This is an auto-imported component!</div>
+  <div class="text-red-500">
+    This is an auto-imported component!
+  </div>
 </template>

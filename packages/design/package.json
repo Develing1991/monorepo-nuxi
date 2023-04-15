@@ -9,7 +9,9 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "start": "storybook dev -p 4000",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "vue": "3.2.47"
