@@ -2,6 +2,6 @@
 
 <template>
   <div class="text-red-500">
-    This is an auto-imported component!
+    This is an auto-imported component!!
   </div>
 </template>
