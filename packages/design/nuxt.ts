@@ -7,6 +7,7 @@ export default defineNuxtModule({
     'components:dirs': (dirs) => {
       dirs.push({
         path: join(__dirname, 'components'),
+        pathPrefix: false, // vite.config.ts의 directoryAsNamespace: false과 상관없이.. 설정이 추가되야 실 nuxt에서 module로 받을 시 pathPrefix 무시 됨..
       })
     },
   },
