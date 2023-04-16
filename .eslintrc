@@ -1,3 +1,9 @@
 {
-  "extends": "@antfu"
+  "extends": "@antfu",
+  "rules": {
+    // your rules...
+    "vue/component-tags-order": ["error", {
+      "order": [ [  "script[setup]", "template" ], "style", "script:not([setup])" ]
+    }]
+  }
 }
