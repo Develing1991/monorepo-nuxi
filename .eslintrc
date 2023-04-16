@@ -1,7 +1,8 @@
+// https://github.com/antfu/eslint-config
 {
   "extends": "@antfu",
+  // https://eslint.vuejs.org/rules/component-tags-order.html
   "rules": {
-    // your rules...
     "vue/component-tags-order": ["error", {
       "order": [ [  "script[setup]", "template" ], "style", "script:not([setup])" ]
     }]
