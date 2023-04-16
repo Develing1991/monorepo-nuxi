@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import type { Props } from './Button'
 
 const { props: { label, bgColor } } = withDefaults(defineProps<{ props: Props }>(), {
@@ -11,6 +10,12 @@ const { props: { label, bgColor } } = withDefaults(defineProps<{ props: Props }>
 
 const backgroundColor = computed(() => bgColors(bgColor))
 </script>
+
+<template>
+  <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
+    {{ label }}
+  </button>
+</template>
 
 <script lang="ts">
 function bgColors(color: string) {
@@ -26,9 +31,3 @@ function bgColors(color: string) {
   }
 }
 </script>
-
-<template>
-  <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
-    {{ label }}
-  </button>
-</template>
