@@ -18,7 +18,7 @@ export default defineConfig({
     Components({
       dirs: ['./components'],
       dts: true, // enabled by default if `typescript` is installed
-      directoryAsNamespace: true, // true: components/ui/test.vue -> UiTest.vue
+      directoryAsNamespace: false, // true: components/ui/test.vue -> UiTest.vue
     }),
   ],
   resolve: {
