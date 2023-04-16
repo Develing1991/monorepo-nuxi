@@ -1,22 +1,24 @@
 {
   "name": "@develing1991/starter",
   "version": "1.0.0",
-  "description": "",
   "packageManager": "pnpm@8.2",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "clean": "find ./ -name node_modules -type d -exec rm -rf {} +",
     "test": "echo \"Error: no test specified\" && exit 1",
     "design:start": "pnpm -F @develing1991/design run start",
     "webapp:start": "pnpm -F @develing1991/webapp run start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "start": "pnpm -r start"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.38.4",
     "eslint": "8.38.0",
     "typescript": "5.0.4"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
