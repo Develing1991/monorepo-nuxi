@@ -88,11 +88,10 @@ importers:
         version: 1.2.0(typescript@5.0.4)
 
   packages/webapp:
-    dependencies:
+    devDependencies:
       '@develing1991/design':
         specifier: latest
         version: link:../design
-    devDependencies:
       autoprefixer:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.21)
