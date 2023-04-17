@@ -4,7 +4,8 @@
   // https://eslint.vuejs.org/rules/component-tags-order.html
   "rules": {
     "vue/component-tags-order": ["error", {
-      "order": [ [  "script[setup]", "template" ], "style", "script:not([setup])" ]
+      // "order": [ [  "script[setup]", "template" ], "style", "script:not([setup])" ]
+      "order": [  "script[setup]", "template", "style", "script:not([setup])" ]
     }]
   }
 }
