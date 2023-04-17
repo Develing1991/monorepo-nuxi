@@ -2,7 +2,7 @@
       1. 방안: props타입 문제... <{props:Props}>로 문제를 해결할 수 있지만,,
          이슈: storybook args에도 객체로 전달되서 애드온 기능에 별로 좋지 않음
       2. 방안: <script setup lang="ts"> 또는 <script lang="ts">에 직접 타입을 작성할 수 있음
-         이슈: 타입이 분리되지 않아 코드가 너저분해 보임
+         이슈: 타입이 분리되지 않아 코드가 너저분해 보임, 타입 재사용에도 좋지 않아 보임..
 -->
 <!-- _ButtonSetupType:
       1. 방안: https://github.com/wheatjs/vite-plugin-vue-type-imports
