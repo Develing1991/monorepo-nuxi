@@ -3,4 +3,6 @@
 export interface Props {
   label: string
   bgColor: string
+  reverse: boolean
+  // size?: string[]
 }
