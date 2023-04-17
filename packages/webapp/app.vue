@@ -1,7 +1,10 @@
 <template>
   <div>
-    <MyComponent />
-    ddd
-    <NuxtWelcome />
+    <!-- <MyComponent />
+    ddd -->
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+    <!-- <NuxtWelcome /> -->
   </div>
 </template>
