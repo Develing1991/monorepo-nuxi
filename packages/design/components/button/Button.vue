@@ -10,9 +10,8 @@
          이슈: 아직 .. 개발단계 검토 필
 -->
 <!-- _ButtonDefine(현 적용):
-      1. 방안: defineComponent 컴파일러 매크로에서 props와 setup조합 .. 문제 없고 가장 무난
-         ...: 일관성를 위해 nuxt에서도 setup script 대신 defineComponent를 사용햇을 때... 이점은
-              defineMetaPage같은 여러 define 매크로와 가독성이나 코드 구분 성, define 일치면에서 오히려 좋을 수도 있을거 같아 보임.
+      1. 방안: defineComponent 컴파일러 매크로에서 props와 setup조합 .. 무난하나..
+         이슈: 지속적인 마이그레이션 필요
 -->
 
 <template>
