@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Props } from './Button'
+import type { Props } from '@/types/Button'
 
 const { props: { label, bgColor } } = withDefaults(defineProps<{ props: Props }>(), {
   props: () => ({
@@ -9,15 +9,7 @@ const { props: { label, bgColor } } = withDefaults(defineProps<{ props: Props }>
 })
 
 const backgroundColor = computed(() => bgColors(bgColor))
-</script>
 
-<template>
-  <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
-    {{ label }}
-  </button>
-</template>
-
-<script lang="ts">
 function bgColors(color: string) {
   switch (color) {
     case 'primary':
@@ -27,7 +19,13 @@ function bgColors(color: string) {
     case 'danger':
       return 'bg-red-400'
     default:
-      return ''
+      return 'bg-green-400'
   }
 }
 </script>
+
+<template>
+  <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
+    {{ label }}
+  </button>
+</template>
