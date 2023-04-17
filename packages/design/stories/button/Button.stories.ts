@@ -4,6 +4,14 @@ import Button from '@/components/button/Button.vue'
 const meta: Meta<typeof Button> = {
   title: 'Button',
   component: Button,
+  argTypes: {
+
+  },
+  args: {
+    label: 'Button',
+    bgColor: 'bg-green-400',
+    reverse: false,
+  },
 }
 
 export default meta
@@ -12,25 +20,20 @@ type Story = StoryObj<typeof Button>
 export const Primary: Story = {
   // name: 'I am the primary',
   args: {
-    props: {
-      label: 'Primary',
-      bgColor: 'primary',
-    },
+    label: 'Primary',
+    bgColor: 'primary',
   },
 }
 export const Secondary: Story = {
   args: {
-    props: {
-      label: 'Secondary',
-      bgColor: 'secondary',
-    },
+    label: 'Secondary',
+    bgColor: 'secondary',
   },
 }
 export const Danger: Story = {
   args: {
-    props: {
-      label: 'Danger',
-      bgColor: 'danger',
-    },
+    label: 'Danger',
+    bgColor: 'danger',
+    reverse: true,
   },
 }
