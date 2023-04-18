@@ -1,13 +1,24 @@
 <!-- https://github.com/wheatjs/vite-plugin-vue-type-imports -->
 <!-- vite.config.ts, plugins:[VueTypeImports()] -->
 <script setup lang="ts">
-import type { Props } from '@/types/Button'
+// import type { Props ,Emits} from '@/types/Button'
+import type { IData, Props } from '@/types/Button'
 
 const { label, bgColor } = withDefaults(defineProps<Props>(), {
   label: 'Button',
   bgColor: 'bg-green-400',
   reverse: false,
 })
+
+defineEmits<{
+  emit: Emits
+}>()
+
+interface Emits {
+  (e: 'click', id: number): void
+}
+
+const data = ref<IData>('')
 
 const backgroundColor = computed(() => bgColors(bgColor))
 
