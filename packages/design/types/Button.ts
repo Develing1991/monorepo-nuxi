@@ -6,3 +6,8 @@ export interface Props {
   reverse: boolean
   // size?: string[]
 }
+export interface Emits {
+  (e: 'click', id: number): void
+}
+
+export type IData = string
