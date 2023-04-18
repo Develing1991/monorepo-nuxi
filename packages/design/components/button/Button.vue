@@ -1,19 +1,3 @@
-<!-- _ButtonSetup:
-      1. 방안: props타입 문제... <{props:Props}>로 문제를 해결할 수 있지만,,
-         이슈: storybook args에도 객체로 전달되서 애드온 기능에 별로 좋지 않음
-      2. 방안: <script setup lang="ts"> 또는 <script lang="ts">에 직접 타입을 작성할 수 있음
-         이슈: 타입이 분리되지 않아 코드가 너저분해 보임, 타입 재사용에도 좋지 않아 보임...
--->
-<!-- _ButtonSetupType:
-      1. 방안: https://github.com/wheatjs/vite-plugin-vue-type-imports
-         vite.config.ts, plugins:[VueTypeImports()] 플러그인 추가
-         이슈: 아직 .. 개발단계 검토 필
--->
-<!-- _ButtonDefine(현 적용):
-      1. 방안: defineComponent 컴파일러 매크로에서 props와 setup조합 .. 무난하나..
-         이슈: 지속적인 마이그레이션 필요
--->
-
 <template>
   <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
     {{ label }}
@@ -21,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import type { Props } from '@/types/Button'
+import type { IData, Props } from '@/types/Button'
 
 export default defineComponent({
   props: {
@@ -39,6 +23,7 @@ export default defineComponent({
     },
   },
   setup(props: Props) {
+    const aaa = ref<IData>('')
     const backgroundColor = computed(() => bgColors(props.bgColor))
 
     function bgColors(color: string) {
