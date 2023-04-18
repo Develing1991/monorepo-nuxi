@@ -1,3 +1,4 @@
+
 <template>
   <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
     {{ label }}
@@ -6,6 +7,8 @@
 
 <script lang="ts">
 import type { Props } from '@/types/Button'
+
+
 
 export default defineComponent({
   props: {
@@ -24,7 +27,8 @@ export default defineComponent({
   },
   setup(props: Props) {
     const backgroundColor = computed(() => bgColors(props.bgColor))
-
+    useState()
+    useRoute()
     function bgColors(color: string) {
       switch (color) {
         case 'primary':
