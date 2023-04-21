@@ -2,38 +2,44 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import Button from '@/components/button/Button.vue'
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
+  title: 'components/Button',
   component: Button,
   argTypes: {
+    // color: { control: 'color' },
+    color: { control: 'select', options: ['primary', 'secondary', 'danger'] },
+    // size: { control: 'radio', options: ['primary', 'secondary', 'danger'] },
+    size: { control: 'radio', options: ['small', 'medium', 'large'] },
 
   },
   args: {
     label: 'Button',
-    bgColor: 'bg-green-400',
-    reverse: false,
+    color: 'primary',
+    size: 'small',
+    toggle: false,
   },
 }
 
 export default meta
 type Story = StoryObj<typeof Button>
 
-export const Primary: Story = {
+export const BasicButton: Story = {
   // name: 'I am the primary',
   args: {
-    label: 'Primary',
-    bgColor: 'primary',
+    label: 'Button',
+    color: 'primary',
+
   },
 }
-export const Secondary: Story = {
-  args: {
-    label: 'Secondary',
-    bgColor: 'secondary',
-  },
-}
-export const Danger: Story = {
-  args: {
-    label: 'Danger',
-    bgColor: 'danger',
-    reverse: true,
-  },
-}
+// export const Secondary: Story = {
+//   args: {
+//     label: 'Secondary',
+//     color: 'secondary',
+//   },
+// }
+// export const Danger: Story = {
+//   args: {
+//     label: 'Danger',
+//     color: 'danger',
+//     reverse: true,
+//   },
+// }

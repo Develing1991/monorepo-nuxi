@@ -1,11 +1,19 @@
 <template>
-  <button class="rounded text-white py-2 px-4" :class="[backgroundColor]">
+  <button
+    class="rounded font-bold transition-all duration-300 border-2 "
+    :class="`${buttonConfig[size]}
+             ${(buttonConfig[color] as Options).bgColor}
+             ${(buttonConfig[color] as Options).textColor}
+             ${(buttonConfig[color] as Options).outline}`"
+  >
     {{ label }}
   </button>
 </template>
 
 <script lang="ts">
-import type { IData, Props } from '@/types/Button'
+import type { ButtonConfig, ConfigOptions, Props } from '@/types/Button'
+
+interface Options extends ConfigOptions {}
 
 export default defineComponent({
   props: {
@@ -13,33 +21,47 @@ export default defineComponent({
       type: String as PropType<string>,
       default: 'Button',
     },
-    bgColor: {
+    color: {
       type: String as PropType<string>,
-      default: 'bg-green-400',
+      default: 'primary',
     },
-    reverse: {
+    size: {
+      type: String as PropType<string>,
+      default: 'small',
+    },
+    toggle: {
       type: Boolean as PropType<boolean>,
       default: false,
     },
   },
   setup(props: Props) {
-    const aaa = ref<IData>('')
-    const backgroundColor = computed(() => bgColors(props.bgColor))
+    const buttonConfig = computed<ButtonConfig>(() => {
+      return {
+      // Colors
+        primary: {
+          bgColor: `${props.toggle ? 'bg-blue-400' : 'bg-white'} hover:opacity-80`,
+          textColor: `${props.toggle ? 'text-white' : 'text-blue-400'}`,
+          outline: 'border-blue-400',
+        },
+        secondary: {
+          bgColor: `${props.toggle ? 'bg-gray-400' : 'bg-white'} hover:opacity-80`,
+          textColor: `${props.toggle ? 'text-white' : 'text-gray-400'}`,
+          outline: 'border-gray-400',
+        },
+        danger: {
+          bgColor: `${props.toggle ? 'bg-red-400' : 'bg-white'} hover:opacity-80`,
+          textColor: `${props.toggle ? 'text-white' : 'text-red-400'}`,
+          outline: 'border-red-400',
+        },
 
-    function bgColors(color: string) {
-      switch (color) {
-        case 'primary':
-          return 'bg-blue-400'
-        case 'secondary':
-          return 'bg-gray-400'
-        case 'danger':
-          return 'bg-red-400'
-        default:
-          return 'bg-green-400'
+        // Sizes
+        small: 'px-3 py-2 text-sm',
+        medium: 'px-5 py-2 text-lg',
+        large: 'px-7 py-2 text-2xl',
       }
-    }
+    })
     return {
-      backgroundColor,
+      buttonConfig,
     }
   },
 })

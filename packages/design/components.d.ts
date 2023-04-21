@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     ButtonDefine: typeof import('./components/button/ButtonDefine.vue')['default']
     ButtonSetup: typeof import('./components/button/ButtonSetup.vue')['default']
     ButtonSetupType: typeof import('./components/button/ButtonSetupType.vue')['default']
+    ButtonTest: typeof import('./components/button/ButtonTest.vue')['default']
     MyComponent: typeof import('./components/ui/MyComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

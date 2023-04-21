@@ -2,12 +2,23 @@
 // https://github.com/vuejs/core/issues/4294#issuecomment-1364769027
 export interface Props {
   label: string
-  bgColor: string
-  reverse: boolean
-  // size?: string[]
-}
-export interface Emits {
-  (e: 'click', id: number): void
+  color: string
+  size: string
+  toggle: boolean
 }
 
-export type IData = string
+export interface ButtonConfig {
+  [key: string]: string | ConfigOptions
+}
+
+export interface ConfigOptions {
+  bgColor: string
+  textColor: string
+  outline: string
+}
+
+// export interface Emits {
+//   (e: 'click', id: number): void
+// }
+
+// export type IData = string
