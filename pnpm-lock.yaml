@@ -45,8 +45,8 @@ importers:
         specifier: 18.15.13
         version: 18.15.13
       '@vitejs/plugin-vue':
-        specifier: 4.0.0
-        version: 4.0.0(vite@4.1.4)(vue@3.2.47)
+        specifier: 4.1.0
+        version: 4.1.0(vite@4.1.4)(vue@3.2.47)
       '@vue/tsconfig':
         specifier: 0.2.0
         version: 0.2.0
@@ -2292,7 +2292,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.3.1(rollup@3.20.2)
       '@rollup/plugin-replace': 5.0.2(rollup@3.20.2)
-      '@vitejs/plugin-vue': 4.0.0(vite@4.1.4)(vue@3.2.47)
+      '@vitejs/plugin-vue': 4.1.0(vite@4.1.4)(vue@3.2.47)
       '@vitejs/plugin-vue-jsx': 3.0.1(vite@4.1.4)(vue@3.2.47)
       autoprefixer: 10.4.14(postcss@8.4.23)
       chokidar: 3.5.3
@@ -3370,7 +3370,7 @@ packages:
       '@storybook/builder-vite': 7.0.6(typescript@5.0.4)(vite@4.1.4)
       '@storybook/core-server': 7.0.6
       '@storybook/vue3': 7.0.6(vue@3.2.47)
-      '@vitejs/plugin-vue': 4.0.0(vite@4.1.4)(vue@3.2.47)
+      '@vitejs/plugin-vue': 4.1.0(vite@4.1.4)(vue@3.2.47)
       magic-string: 0.27.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -3872,8 +3872,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue@4.0.0(vite@4.1.4)(vue@3.2.47):
-    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
+  /@vitejs/plugin-vue@4.1.0(vite@4.1.4)(vue@3.2.47):
+    resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
