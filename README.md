@@ -30,8 +30,8 @@ cd [project name]
 
 ## Commands
 ```
-# required pnpm@8.2.0
-- npm i -g pnpm@8.2.0
+# required pnpm
+- npm i -g pnpm
 
 # install all dependencies of the monorepo
 - pnpm install
