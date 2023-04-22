@@ -17,6 +17,13 @@ const meta: Meta<typeof Button> = {
     size: 'small',
     toggle: false,
   },
+  // decorators: [() => ({ template: '<div style="margin-left: 30px"><story/></div>' })],
+  decorators: [
+    story => ({
+      components: { story },
+      template: '<div  style="margin: 3em;"><story /></div>',
+    }),
+  ],
 }
 
 export default meta
