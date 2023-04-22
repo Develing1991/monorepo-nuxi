@@ -20,7 +20,7 @@
 	"forwardPorts": [3000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm i -g pnpm@8.2.0",
+	"postCreateCommand": "npm i -g pnpm@latest",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
