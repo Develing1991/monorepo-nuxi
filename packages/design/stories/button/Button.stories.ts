@@ -6,7 +6,7 @@ const meta: Meta<typeof Button> = {
   component: Button,
   argTypes: {
     // color: { control: 'color' },
-    color: { control: 'select', options: ['primary', 'secondary', 'danger'] },
+    color: { control: 'select', options: ['blue', 'gray', 'red'], mapping: { blue: 'primary', gray: 'secondary', red: 'danger' } },
     // size: { control: 'radio', options: ['primary', 'secondary', 'danger'] },
     size: { control: 'radio', options: ['small', 'medium', 'large'] },
 
