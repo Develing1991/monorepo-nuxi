@@ -48,8 +48,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0(vite@4.3.1)(vue@3.2.47)
       '@vue/tsconfig':
-        specifier: 0.3.1
-        version: 0.3.1
+        specifier: 0.3.2
+        version: 0.3.2
       autoprefixer:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.23)
@@ -4037,8 +4037,8 @@ packages:
   /@vue/shared@3.2.47:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
 
-  /@vue/tsconfig@0.3.1:
-    resolution: {integrity: sha512-tRsFw+xU6/bzWZT2U7RCG7/avCNIk7qMBONfzJzQBxoi4Ni6C7WpTifCVLNkLn0IDqxhtEETNAPsBtz36uNIxA==}
+  /@vue/tsconfig@0.3.2:
+    resolution: {integrity: sha512-jWzZbGyrZAEbHYGn0kPzJ+MMtIkIxb0+hL5+RghBowyOxMRs9jMdp5XvpXz3wgCzjRZiUucy29042HBe9cxoYA==}
     dev: true
 
   /@yarnpkg/esbuild-plugin-pnp@3.0.0-rc.15(esbuild@0.17.16):
