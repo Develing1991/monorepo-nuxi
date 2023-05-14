@@ -1,19 +1,21 @@
 import { URL, fileURLToPath } from 'node:url'
+
 // https://github.com/antfu/unplugin-auto-import
 import AutoImport from 'unplugin-auto-import/vite'
+
 // https://github.com/antfu/unplugin-vue-components
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // https://github.com/wheatjs/vite-plugin-vue-type-imports
-import VueTypeImports from 'vite-plugin-vue-type-imports'
+// import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    VueTypeImports(),
+    // VueTypeImports(), vue 3.3.2 ( 3.3.0-alpha.6 update )
     AutoImport({
       imports: ['vue'], // "vue-router"
       dirs: ['./composables', './hooks'],
