@@ -6,6 +6,7 @@
     "vue/component-tags-order": ["error", {
       // "order": [ [  "script[setup]", "template" ], "style", "script:not([setup])" ]
       "order": [  "script[setup]", "template", "style", "script:not([setup])" ]
-    }]
+    }],
+    "vue/comma-dangle": "off"
   }
 }
