@@ -7,6 +7,12 @@ export interface Props {
   toggle: boolean
 }
 
+export interface Props2 {
+  label: string
+  bgColor: string
+  reverse: boolean
+}
+
 export interface ButtonConfig {
   [key: string]: string | ConfigOptions
 }

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Button from '@/components/button/ButtonDefine.vue'
+import Button from '@/components/button/ButtonSetupType.vue'
 
 const meta: Meta<typeof Button> = {
   title: 'deprecated/Button',

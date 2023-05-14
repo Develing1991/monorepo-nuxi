@@ -2,9 +2,9 @@
 <!-- vite.config.ts, plugins:[VueTypeImports()] -->
 <script setup lang="ts">
 // import type { Props ,Emits} from '@/types/Button'
-import type { IData, Props } from '@/types/Button'
+import type { Props2 } from '@/types/Button'
 
-const { label, bgColor } = withDefaults(defineProps<Props>(), {
+const { label, bgColor } = withDefaults(defineProps<Props2>(), {
   label: 'Button',
   bgColor: 'bg-green-400',
   reverse: false,
@@ -17,8 +17,6 @@ defineEmits<{
 interface Emits {
   (e: 'click', id: number): void
 }
-
-const data = ref<IData>('')
 
 const backgroundColor = computed(() => bgColors(bgColor))
 
