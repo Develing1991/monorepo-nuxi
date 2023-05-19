@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Default Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nandinagari&display=swap'); */
+html {
+    @apply font-mono text-[16px]
+}
+
+header {
+    @apply max-w-sm bg-red-300 mx-auto;
+}
+main {
+    @apply max-w-sm bg-violet-500 mx-auto h-screen;
+}
+
+footer {
+    @apply max-w-sm bg-red-300 mx-auto;
+}
