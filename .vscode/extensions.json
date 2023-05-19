@@ -1,3 +1,20 @@
 {
-  "recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin", "dbaeumer.vscode-eslint"]
+  "recommendations": [
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "kamikillerto.vscode-colorize",
+    "pranaygp.vscode-css-peek",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "ecmel.vscode-html-css",
+    "solnurkarim.html-to-css-autocompletion",
+    "bradlc.vscode-tailwindcss",
+    "jock.svg",
+    "cipchk.cssrem",
+    "pkief.material-icon-theme",
+    "kisstkondoros.vscode-gutter-preview",
+    "dbaeumer.vscode-eslint"
+  ]
 }
