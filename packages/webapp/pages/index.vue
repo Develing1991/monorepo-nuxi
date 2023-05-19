@@ -1,15 +1,15 @@
 <script lang="ts" setup>
 useHead({
-  title: "Welcome my page",
-});
+  title: 'Welcome my page',
+})
 </script>
 
 <template>
-  <div>
+  <main>
     index
-    <CustomButtom/>
-    <Button label="Priamry" bg-color="primary" />
-  </div>
+    <!-- <CustomButtom /> -->
+    <!-- <Button label="Priamry" bg-color="primary" /> -->
+  </main>
 </template>
 
 <style scoped></style>
