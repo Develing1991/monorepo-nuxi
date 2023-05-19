@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- <NavBar /> -->
-    <div>Header</div>
+    <LayoutHeaderMain />
     <slot />
+    <LayoutFooterMain />
   </div>
 </template>
