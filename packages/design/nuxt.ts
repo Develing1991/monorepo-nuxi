@@ -1,7 +1,7 @@
 import { join } from 'node:path'
 import { defineNuxtModule } from '@nuxt/kit'
 // https://nuxtjs.org/docs/configuration-glossary/configuration-components#library-authors
-
+// https://vueschool.io/articles/vuejs-tutorials/scalable-nuxt-3-monorepos-with-pnpm-workspaces/
 export default defineNuxtModule({
   hooks: {
     'components:dirs': (dirs) => {
