@@ -13,7 +13,7 @@
     "@develing1991/design": "latest",
     "autoprefixer": "10.4.14",
     "nuxt": "3.6.1",
-    "postcss": "8.4.24",
+    "postcss": "8.4.25",
     "tailwindcss": "3.3.2"
   }
 }
