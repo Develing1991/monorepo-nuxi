@@ -21,7 +21,7 @@
     "@storybook/addon-interactions": "7.6.12",
     "@storybook/addon-links": "7.6.12",
     "@storybook/blocks": "7.6.12",
-    "@storybook/testing-library": "0.2.0",
+    "@storybook/testing-library": "0.2.2",
     "@storybook/vue3": "7.6.12",
     "@storybook/vue3-vite": "7.6.12",
     "@types/node": "18.17.2",
