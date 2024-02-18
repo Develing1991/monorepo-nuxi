@@ -49,8 +49,8 @@ importers:
         specifier: 18.19.17
         version: 18.19.17
       '@vitejs/plugin-vue':
-        specifier: 4.6.2
-        version: 4.6.2(vite@4.5.2)(vue@3.4.19)
+        specifier: 5.0.4
+        version: 5.0.4(vite@4.5.2)(vue@3.4.19)
       '@vue/tsconfig':
         specifier: 0.5.1
         version: 0.5.1
@@ -5108,6 +5108,17 @@ packages:
       vue: 3.4.19(typescript@5.3.3)
     dev: true
 
+  /@vitejs/plugin-vue@5.0.4(vite@4.5.2)(vue@3.4.19):
+    resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      vite: ^5.0.0
+      vue: ^3.2.25
+    dependencies:
+      vite: 4.5.2(@types/node@18.19.17)
+      vue: 3.4.19(typescript@5.3.3)
+    dev: true
+
   /@vitejs/plugin-vue@5.0.4(vite@5.1.1)(vue@3.4.19):
     resolution: {integrity: sha512-WS3hevEszI6CEVEx28F8RjTX97k3KsrcY6kvTg7+Whm5y3oYvcqzVeGCU3hxSAn4uY2CLCkeokkGKpoctccilQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -7974,7 +7985,7 @@ packages:
   /get-intrinsic@1.2.0:
     resolution: {integrity: sha512-L049y6nFOuom5wGyRc3/gdTLO94dySVKRACj1RmJZBQXlbTMhtNIgkWkUHq+jYmZvKf14EW1EoJnnjbmoHij0Q==}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
       has: 1.0.3
       has-symbols: 1.0.3
     dev: true
@@ -8276,7 +8287,7 @@ packages:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
     dev: true
 
   /hash-sum@2.0.0:
