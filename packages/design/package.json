@@ -25,7 +25,7 @@
     "@storybook/vue3": "7.6.20",
     "@storybook/vue3-vite": "7.6.20",
     "@types/node": "20.14.9",
-    "@vitejs/plugin-vue": "4.6.2",
+    "@vitejs/plugin-vue": "5.0.5",
     "@vue/tsconfig": "0.5.1",
     "autoprefixer": "10.4.17",
     "npm-run-all2": "5.0.2",
