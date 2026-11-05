@@ -14,7 +14,7 @@
     "start": "pnpm -r start"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.23.0",
+    "@antfu/eslint-config": "2.27.3",
     "eslint": "9.7.0",
     "typescript": "5.5.3"
   },
